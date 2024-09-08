@@ -9,7 +9,7 @@ MOROW= “Maintaining our Rights of Way”
 
 - [ ] Ideally cross-platform development (IOS/ Android/?)
 
-Nick Whitelegg- Made a previous attempt at Android mobile app, with the aim of mapping ROWs in England and Wales. It shows OSM-mapped paths overlaid on open council data, allowing users to identify gaps – and with a background layer of OS Open Data or historic maps; the latter may no longer work. https://gitlab.com/nickw1/mapthepaths-android 
+Nick Whitelegg- Made a previous attempt at Android mobile app, with the aim of mapping ROWs in England and Wales. It shows OSM-mapped paths overlaid on open council data, allowing users to identify gaps – and with a background layer of OS Open Data or historic maps; the latter may no longer work. https://gitlab.com/nickw1/mapthepaths-android. MOROW Investigation work is here https://gitlab.com/nickw1/mapthepaths-android/-/commits/morow-investigation 
 
 Nick suggested we might want to look at https://mapthepaths.org.uk/app.html for what it can do, as of now. The https://mapthepaths.org.uk/ site might also be of interest.
 
@@ -24,7 +24,7 @@ I live in Wiltshire (UK), and when out walking, often see public footpaths that 
 Using existing OSM data, I wonder whether lesser used footpaths could be revived; and UK (and beyond?) users encouraged to use paths, for health and wellbeing benefits, and contribution to mapping.
 My idea is that this could be gamified. Users of a simple new app, or of functionality added to an existing app, would score points for walking/ wheeling along recognized paths. Different scoring could be used, for example:
 
-- [ ]  For every 100 yds/ mtrs, or path segment (?), a point could be earned.
+- [ ] For every 100 yds/ mtrs, or path segment (?), a point could be earned.
 
 - [ ] For paths that are used less regularly, i.e., haven’t had a GPS trace for a specified amount of time, could score more points.
 
