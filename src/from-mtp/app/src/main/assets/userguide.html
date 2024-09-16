@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MapThePaths Android app</title>
+</head>
+<body>
+<h1>MapThePaths Android app</h1>
+<hr/>
+<p>
+    This is the accompanying app to
+    <a href='https://www.mapthepaths.org.uk'>MapThePaths</a>,
+    a project to add all the rights of way (RoWs) and permissive paths in England and Wales to
+    OpenStreetMap
+    (OSM) fully tagged. The app helps you find the locations of council RoWs and RoWs already on OSM
+    while
+    actually out surveying, helping you locate where there are missing paths or paths without a
+    designation
+    tag on OSM. It also allows you to <em>record a tagged GPS trace</em> in which you can tag
+    sections of the trace with the path designation and surface type.</p>
+<h2>Map key</h2>
+<p>The colour scheme used is as follows (thicker lighter lines are council data and thinner
+    darker lines are OSM data):
+</p>
+<ul>
+    <li>green = public footpath</li>
+    <li>brown = public bridleway</li>
+    <li>magenta = restricted byway</li>
+    <li>red = byway open to all traffic</li>
+    <li>light blue = permissive footpath</li>
+    <li>grey = anything else (road, path not marked as RoW or permissive)</li>
+</ul>
+
+
+<h2>Using the MapThePaths app</h2>
+<h3>What can you do?</h3>
+<p>The app allows you to:
+<ul>
+    <li>View council RoW data overlaid with OSM data, much like the MapThePaths website;</li>
+    <li>Download <strong>live OSM data from the OpenStreetMap API</strong>. This should be used for
+        editing purposes only. You can update the designation of live data by long-pressing on an
+        OSM way and then selecting the "Change designation of selected way" menu option.
+        To avoid copyright violation, <strong>please only do this via on the ground
+            observations, not
+            by copying the designation from council data!</strong>
+    <li><strong>Record tagged GPS traces</strong>. Using the dropdown lists at the top of the
+        screen you can tag sections of your route with the path designation (public footpath,
+        public bridleway etc) and path type (grass path, track, etc). These tagged traces can
+        then be uploaded to the OpenStreetMap site, or opened in JOSM helping you add new data
+        to OSM. It is hoped in the future (time permitting!) to develop a JOSM plugin to
+        colour-code these tagged traces according to right of way type, further easing the
+        creation of new OSM data.
+    </li>
+</ul>
+<h3>View mode</h3>
+<p>You can select the mode ("View" or "Live OSM Edit") via the bottom navigation view on the app.
+    "View"
+    mode is the default. It provides a view much like the MapThePaths website itself; it shows
+    council
+    RoW data (in thicker, lighter lines) overlaid by OpenStreetMap data from the Freemap server (in
+    thinner,
+    darker lines) coloured according to RoW designation. Thus, "view" mode allows you to easily
+    identify which
+    RoWs are missing on OSM and which are lacking a designation, as paths without a designation will
+    appear
+    in grey. To view the data you must select "Download council and OSM data" from the menu
+    system.</p>
+<p>You can use "Live OSM Edit" mode, below to add a designation but <strong>do not copy the council
+    data
+</strong>, as not all councils license their data in a way which is compatible with OSM. Instead,
+    <strong>add designations only via on-the-ground observation.</strong></p>
+<p>Note that <strong>the OSM data in "View" mode is not live OSM data</strong>. It is OSM data
+    provided
+    by the <a href='https://www.free-map.org.uk'>Freemap</a> server, which is normally up to a week,
+    sometimes two weeks, old. So it
+    is possible that an apparently-missing footpath has been surveyed in the meantime. You can use
+    "Live OSM Edit"
+    mode to check the live OSM data to be absolutely sure.</p>
+
+<h3>Live OSM Edit mode</h3>
+<p>"Live OSM Edit" mode allows you to change the designation of a path. It works
+    with live OSM data from the OSM API, so you must select "Download live OSM data" from the menu
+    first and you must
+    login to OSM (via the "Login to OSM" menu option). Use your normal OSM account.
+</p>
+<p>To change the designation of a path, long-press on it. A dialog will appear with different
+    designation
+    options, listing the various RoW classifications plus permissive path (the latter can be useful
+    if you
+    discover that a path has permissive access). This will be updated live on OSM as soon as you
+    select the
+    new designation.</p>
+<h2>Adding notes</h2>
+<p>When logged in, you can also add notes for other mappers, e.g. make a note that a hedge is either
+    to the
+    left or to the right of the path. The note button is available in both "View" and "Live OSM
+    Edit"
+    modes.</p>
+<h2>Performance issues</h2>
+<p>The app uses a forked version of the Ordnance Survey OpenSpace SDK for Android
+    (see <a href='https://github.com/nickw1/openspace-android-sdk'>here</a>). Paths are added to the
+    Ordnance Survey Vector Map District base layer as vector lines; performance can be poor if you
+    attempt to use the app in an urban area due to sheer volume of data. I found that on a Nexus 5
+    it is slow in urban areas but on a Nexus 9 tablet, significantly faster. Please note that
+    <strong>the app is not optimised for urban areas</strong>, its intended use is in the
+    countryside.
+    Small towns will be fine though (based on tests in Southampton and Romsey).</p>
+
+
+<h2>Recording a tagged GPS trace</h2>
+
+<p>MapThePaths also allows you to record tagged GPS traces. Press the red &quot;record&quot; button
+    to
+    start recording. GPS traces are tagged with the path designation (public footpath, etc)
+    and path type (grass path, track, etc), which can be selected from the dropdown lists at the
+    top of the screen. When recording, press the black &quot;stop&quot; button to stop. You can then
+    upload the trace to OpenStreetMap using the cloud icon on the action bar at the top of the
+    screen.
+</p>
+<h3>Waypoints</h3>
+<p>GPS waypoints are also recorded wheneve the designation or path type changes. These are
+    labelled with the new designation and path type. <strong>This
+        can assist you if you wish to use your trace to edit in JOSM later</strong>, as the
+    waypoints will
+    mark a change in either of these two path properties.</p>
+<h3>Saving the GPS trace</h3>
+<p>GPS traces are saved on the device in GPX format under the <em>mapthepaths</em> folder. The
+    current survey is saved as <em>mapthepathsCurrentSurvey.gpx</em>; whenever you upload a GPS
+    survey or
+    select <em>New track</em> from the menu, you will be prompted for a filename
+    to save the track as a GPX file. If you leave the filename blank, an auto-generated name
+    with the track's timestamp will be used.
+</p>
+<h3>Uploading traces later</h3>
+<p>You can upload previously-saved traces OpenStreetMap (as
+    above), by selecting &quot;Upload saved track&quot; from the menu.</p>
+
+<h2>Bug reporting</h2>
+
+<p>The app has been extensively tested, however it is always possible that a bug may occur,
+    If a bug occurs please
+    <em>email the developer</em>, Nick Whitelegg on hikar.app@gmail.com, stating the latitude and
+    longitude where the error occurred and what you were doing at the time.</p>
+<h2>Obtaining the source code</h2>
+
+<p>Source code is available
+    <a href='https://gitlab.com/nickw1/mapthepaths-android'>here</a>.
+</p>
+
+<h2>Privacy policy</h2>
+<p>The MapThePaths app will track your GPS location, in order to download mapping information
+    for your current area and to allow you to record a route. Using the OAuth authentication system,
+    the app also stores a unique &quot;token&quot; to identify
+    you to OSM once you have logged in; this is stored on the device between uses of MapThePaths
+    to avoid you having to login each time.
+    Edits you make (whether adding a note, or changing the designation of an existing
+    way) will be attributable to you on OSM. However, the app does NOT store your OSM
+    username or password on the device. It is OpenStreetMap itself which validates your username
+    and password. </p>
+<h3>GPS trace uploading: privacy issues</h3>
+<p>GPS traces are uploaded to <em>OSM</em> in Public mode, which means that other users can
+    identify
+    you as the surveyor of the track. To quote from the
+    <a href='https://wiki.openstreetmap.org/wiki/Visibility_of_GPS_traces'>OpenStreetMap
+        wiki</a>, this means that &quot;the trace will be shown publicly in Your GPS traces and in
+    public
+    GPS trace
+    listings. Data served via the API does not reference your trace page. Timestamps of the trace
+    points are not available through the public GPS API,
+    and the points are not chronologically ordered. However, other users are still able to download
+    the raw trace from the public trace list and any timestamps contained within.&quot;</p>
+<p>You should also read the OpenStreetMap privacy policy; see
+    <a href='https://wiki.osmfoundation.org/wiki/Privacy_Policy'>here</a>.</p>
+</body>
+</html>
+
+
+

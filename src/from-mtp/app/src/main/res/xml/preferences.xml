@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBoxPreference android:key="prefShowCurrentLocation" android:title="@string/showCurrentLocation" android:summary="@string/showCurrentLocationDesc" android:defaultValue="true" />
+    <ListPreference android:title="@string/viewDimensions" android:summary="@string/viewDimensionsSummary"
+        android:entries="@array/viewDimensionsEntries" android:entryValues="@array/viewDimensionsEntryValues"
+        android:key="prefViewDimensions"
+        android:defaultValue="6000" />
+    <ListPreference android:title="@string/liveOsmDimensions" android:summary="@string/liveOsmDimensionsSummary"
+        android:entries="@array/liveOsmDimensionsEntries" android:entryValues="@array/liveOsmDimensionsEntryValues"
+        android:key="prefLiveOsmDimensions"
+        android:defaultValue="3000" />
+    <EditTextPreference android:title="@string/gpsTimeTitle" android:summary="@string/gpsTimeSummary"
+        android:key="prefLoggingInterval" android:defaultValue="5" />
+    <EditTextPreference android:title="@string/gpsDistanceTitle" android:summary="@string/gpsDistanceSummary"
+        android:key="prefLoggingDistance" android:defaultValue="5" />
+</PreferenceScreen>

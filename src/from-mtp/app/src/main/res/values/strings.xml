@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">MapThePaths</string>
+    <string name="downloadOSM">Download council and OSM ROWs</string>
+    <string name="path_type">Path type:</string>
+    <string name="downloadLiveOsm">Download live OSM data</string>
+    <string name="view">View</string>
+    <string name="edit">Live OSM Edit</string>
+    <string name="loginToOsm">Login to OSM</string>
+    <string name="newTrack">New track</string>
+    <string name="enterDesignation">Enter designation:</string>
+    <string name="prefs">Settings</string>
+    <string name="choosePoiType">Choose POI type</string>
+    <string name="choosePoiName">Enter POI name</string>
+    <string name="settings">Settings</string>
+    <string name="userGuide">User guide and privacy policy</string>
+    <string name="about">About</string>
+    <string name="viewDimensions">Area to download MapThePaths data</string>
+    <string name="viewDimensionsSummary">Dimensions of area to download MapThePaths council and OSM data (non-live) in \'view\' mode.</string>
+    <string name="liveOsmDimensions">Area to download live OSM data</string>
+    <string name="liveOsmDimensionsSummary">Dimensions of area to download live OSM data, viewable in \'Edit\' mode.</string>
+    <string name="changeDesigation">Change designation of selected way</string>
+    <string name="uploadTrack">Upload track to OSM</string>
+    <string name="uploadSavedTrack">Upload saved track to OSM</string>
+    <string name="showCurrentLocation">Show map at current location</string>
+    <string name="showCurrentLocationDesc">Always show map at current location (turning off allows you to move map around)</string>
+    <string name="gpsTimeTitle">GPS logging time Interval</string>
+    <string name="gpsTimeSummary">Time interval for logging GPS trackpoints in seconds.</string>
+    <string name="gpsDistanceTitle">GPS logging distance interval</string>
+    <string name="gpsDistanceSummary">Distance interval for logging GPS trackpoints in metres.</string>
+</resources>

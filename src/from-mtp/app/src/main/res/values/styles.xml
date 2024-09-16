@@ -1,0 +1,21 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="SpinnerTheme" parent="Theme.AppCompat">
+        <item name="android:background">#008000</item>
+        <item name="android:textColor">#ffffff</item>
+
+    </style>
+
+    <style name="FabTheme" parent="Theme.AppCompat.Light">
+        <item name="colorAccent">@color/colorAccentFab</item>
+    </style>
+</resources>

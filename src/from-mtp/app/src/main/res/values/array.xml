@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="pathTypes">
+        <item>Public footpath</item>
+        <item>Public bridleway</item>
+        <item>Restricted byway</item>
+        <item>Byway open to all traffic</item>
+        <item>Permissive path</item>
+    </string-array>
+    <string-array name="pathSurfaceTypes">
+        <item>grass path</item>
+        <item>dirt path</item>
+        <item>gravel path</item>
+        <item>grass track</item>
+        <item>dirt track</item>
+        <item>gravel track</item>
+        <item>service road</item>
+        <item>unpaved road</item>
+    </string-array>
+    <string-array name="pathSurfaceTypesValues">
+        <item>gsp</item>
+        <item>dtp</item>
+        <item>grp</item>
+        <item>gst</item>
+        <item>dtt</item>
+        <item>grt</item>
+        <item>psv</item>
+        <item>usv</item>
+    </string-array>
+    <string-array name="designations">
+        <item>public_footpath</item>
+        <item>public_bridleway</item>
+        <item>restricted_byway</item>
+        <item>byway_open_to_all_traffic</item>
+    </string-array>
+    <string-array name="viewDimensionsEntries">
+        <item>4x4km</item>
+        <item>6x6km</item>
+        <item>8x8km</item>
+    </string-array>
+    <string-array name="viewDimensionsEntryValues">
+        <item>4000</item>
+        <item>6000</item>
+        <item>8000</item>
+    </string-array>
+    <string-array name="liveOsmDimensionsEntries">
+        <item>2x2km</item>
+        <item>3x3km</item>
+        <item>4x4km</item>
+    </string-array>
+    <string-array name="liveOsmDimensionsEntryValues">
+        <item>2000</item>
+        <item>3000</item>
+        <item>4000</item>
+    </string-array>
+</resources>

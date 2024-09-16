@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/upload" android:title="@string/uploadTrack" android:icon="@drawable/baseline_cloud_upload_black_18dp" app:showAsAction="ifRoom" />
+    <item android:id="@+id/download" android:title="@string/downloadOSM" />
+    <item android:id="@+id/loginToOsm" android:title="@string/loginToOsm" />
+    <item android:id="@+id/downloadLiveOsm" android:title="@string/downloadLiveOsm" />
+    <item android:id="@+id/newTrack" android:title="@string/newTrack" />
+    <item android:id="@+id/uploadSavedTrack" android:title="@string/uploadSavedTrack" />
+    <item android:id="@+id/changeDesignation" android:title="@string/changeDesigation" />
+    <item android:id="@+id/userGuide" android:title="@string/userGuide" />
+    <item android:id="@+id/prefs" android:title="@string/settings" />
+    <item android:id="@+id/about" android:title="@string/about" />
+</menu>
